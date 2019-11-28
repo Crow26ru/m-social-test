@@ -1,0 +1,82 @@
+.button {
+  display: block;
+  border-radius: 3px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: $color-white;
+
+  background-color: $color-blue;
+
+  @include tablet {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.button,
+.button:hover,
+.button:focus,
+.button:active {
+  color: $color-white;
+
+  transition: background-color 0.4s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $color-dark-blue;
+}
+
+.button:focus {
+  text-decoration: underline;
+
+  outline: none;
+}
+
+.button:active {
+  background-color: $color-light-blue;
+}
+
+.button--transparent {
+  border: 1px solid $color-gray;
+
+  font-weight: 400;
+  color: $color-gray;
+
+  @include tablet {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+.button--transparent,
+.button--transparent:hover,
+.button--transparent:focus,
+.button--transparent:active {
+  background-color: transparent;
+
+  transition: border-color 0.4s, color 0.4s;
+}
+
+.button--transparent:hover {
+  border-color: $color-black;
+
+  color: $color-black;
+}
+
+.button--transparent:focus {
+  border-color: $color-dark-blue;
+
+  color: $color-dark-blue;
+}
+
+.button--transparent:active {
+  border-color: $color-blue;
+
+  color: $color-blue;
+}
